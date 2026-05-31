@@ -1,4 +1,4 @@
-# Single-Intersection MO-CL-D3QN Traffic Signal Control
+# Framework MO-CL-D3QN Traffic Signal Control
 
 Repository ini berisi program eksperimen **Adaptive Traffic Signal Control (ATSC)** pada satu persimpangan menggunakan **Multi-Objective Curriculum Learning Dueling Double Deep Q-Network (MO-CL-D3QN)** dan beberapa metode pembanding.
 
