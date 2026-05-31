@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car" vClass="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="13.89" guiShape="passenger"/>
+
+    <route id="N_to_S" edges="N_in S_out"/>
+    <route id="N_to_E" edges="N_in E_out"/>
+    <route id="N_to_W" edges="N_in W_out"/>
+    <route id="S_to_N" edges="S_in N_out"/>
+    <route id="S_to_W" edges="S_in W_out"/>
+    <route id="S_to_E" edges="S_in E_out"/>
+    <route id="E_to_W" edges="E_in W_out"/>
+    <route id="E_to_S" edges="E_in S_out"/>
+    <route id="E_to_N" edges="E_in N_out"/>
+    <route id="W_to_E" edges="W_in E_out"/>
+    <route id="W_to_N" edges="W_in N_out"/>
+    <route id="W_to_S" edges="W_in S_out"/>
+
+    <!-- Medium demand: straight dominant, turning flows lower. -->
+    <flow id="f_N_to_S" type="car" route="N_to_S" begin="0" end="3600" probability="0.16" departLane="best" departSpeed="max"/>
+    <flow id="f_S_to_N" type="car" route="S_to_N" begin="0" end="3600" probability="0.16" departLane="best" departSpeed="max"/>
+    <flow id="f_E_to_W" type="car" route="E_to_W" begin="0" end="3600" probability="0.16" departLane="best" departSpeed="max"/>
+    <flow id="f_W_to_E" type="car" route="W_to_E" begin="0" end="3600" probability="0.16" departLane="best" departSpeed="max"/>
+
+    <flow id="f_N_to_E" type="car" route="N_to_E" begin="0" end="3600" probability="0.04" departLane="best" departSpeed="max"/>
+    <flow id="f_S_to_W" type="car" route="S_to_W" begin="0" end="3600" probability="0.04" departLane="best" departSpeed="max"/>
+    <flow id="f_E_to_S" type="car" route="E_to_S" begin="0" end="3600" probability="0.04" departLane="best" departSpeed="max"/>
+    <flow id="f_W_to_N" type="car" route="W_to_N" begin="0" end="3600" probability="0.04" departLane="best" departSpeed="max"/>
+
+    <flow id="f_N_to_W" type="car" route="N_to_W" begin="0" end="3600" probability="0.03" departLane="best" departSpeed="max"/>
+    <flow id="f_S_to_E" type="car" route="S_to_E" begin="0" end="3600" probability="0.03" departLane="best" departSpeed="max"/>
+    <flow id="f_E_to_N" type="car" route="E_to_N" begin="0" end="3600" probability="0.03" departLane="best" departSpeed="max"/>
+    <flow id="f_W_to_S" type="car" route="W_to_S" begin="0" end="3600" probability="0.03" departLane="best" departSpeed="max"/>
+</routes>
